@@ -18,7 +18,30 @@
     <body>
         <img src="./universalMedia/LOGO.png" alt="Logo" style="border: black 1px solid">
         <div id="login-container">
-            <h1>Login</h1>
+            <div id="loginForm">
+                <form action="" method="post">
+                    <h1>Login</h1>
+                    <section id="usernameSection">
+                        <img class="loginIcon" src="./universalMedia/usernameIcon.svg">
+                        <input type="text" name="username" placeholder="Username" required autocomplete="off">
+                        <br>
+                        <a href="./forgottenPages/forgotUsername.html">Forgot Username?</a>
+                    </section>
+                    <section id="passwordSection">
+                        <br>
+                        <img class="loginIcon" src="./universalMedia/passwordIcon.svg">
+                        <input type="password" name="password" placeholder="Password" required autocomplete="off">
+                        <br>
+                        <a href="./forgottenPages/forgotPassword.html">Forgot Password?</a>
+                    </section>
+                    <input type="submit" value="Login" disabled>
+                    <section id="sso">
+                        <button type="button"><a href="https://www.google.com" id="googleSSO" class="sso"><img src="./universalMedia/google.svg"></a></button>
+                        <button type="button"><a href="https://www.github.com" id="githubSSO" class="sso"><img src="./universalMedia/github.svg"></a></button>
+                        <button type="button"><a href="https://www.discord.com" id="discordSSO" class="sso"><img src="./universalMedia/discord.svg"></a></button>
+                    </section>
+                </form>
+            </div>
         </div>            
     </body>
 </html>
