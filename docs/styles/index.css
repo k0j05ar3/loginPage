@@ -79,7 +79,8 @@ form > h1{
     user-select: none;
 }
 #loginButton{
-    font-size: 2em;
+    font-size: 200%;
+    text-align: center;
     display: block;
     margin: auto;
     width: 20%;
@@ -134,8 +135,23 @@ button:active{
     background-color: gray;
 }
 
-@media screen and (max-width: 768px) {
-    #Logo{
-        visibility: hidden;
-    }    
+@media (max-width: 600px) {
+    #login-container {
+        max-width: 95vw;
+        padding: 1rem;
+    }
+
+    #Logo {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 400px) {
+    #login-container {
+        padding: 0.5rem;
+    }
+
+    #Logo {
+        max-width: 95vw;
+    }
 }
