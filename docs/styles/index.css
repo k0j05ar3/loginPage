@@ -1,0 +1,157 @@
+#login-container{
+    background-color: rgba(28, 43, 141, 255);
+    max-width: 35%;
+    max-height: 80%;
+    border: white 2px solid;
+    border-radius: 25px;
+    margin: auto;
+    justify-content: center;
+    box-shadow: 0px 0px 100px 15px black;
+}
+
+form > h1{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 65px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+#usernameSection, #passwordSection{
+    background-color: rgba(217, 217, 217, 255);
+    width: 90%;
+    height: 50px;
+    margin: 0 auto 50px auto;
+    border-radius: 25px;
+    position: relative;
+}
+
+.forgotButton{
+    color: white;
+    text-decoration: underline;
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: -25px;
+    max-width: 80%;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.loginInfo, .loginIcon{
+    position: absolute;
+}
+
+.loginInfo {
+    background-color: rgba(217, 217, 217, 255);
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.loginIcon {
+    z-index: 500;
+    height: 30px;
+    width: 30px;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    pointer-events: none;
+}
+
+.loginInfo[name="password"]{
+    top: 0;
+}
+
+.loginInfo[placeholder] {
+    padding-left: 10%;
+}
+
+#Logo{
+    pointer-events: none;
+    user-select: none;
+}
+#loginButton{
+    font-size: 200%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 20%;
+    border-radius: 100px;
+    border: none;
+}
+
+#loginButton:hover{
+    transition: box-shadow 0.5s;
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+#loginButton:active{
+    background-color: gray;
+    color: white;
+}
+
+#sso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    column-gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    border: none;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+}
+
+button > a > img{
+    max-width: 45px;
+    max-height: 45px;
+}
+
+button:hover{
+    transition: box-shadow 0.5s;
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+button:active{
+    background-color: gray;
+}
+
+@media (max-width: 600px) {
+    #login-container {
+        max-width: 95vw;
+        padding: 1rem;
+    }
+
+    #Logo {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 400px) {
+    #login-container {
+        padding: 0.5rem;
+    }
+
+    #Logo {
+        max-width: 95vw;
+    }
+}

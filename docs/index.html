@@ -13,28 +13,30 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Smooch+Sans:wght@100..900&display=swap"
             rel="stylesheet">
+        <link href="./styles/web.css" rel="stylesheet">
+        <link href="styles/index.css" rel="stylesheet">
         <title>Login</title>
     </head>
     <body>
-        <img src="./universalMedia/LOGO.png" alt="Logo" style="border: black 1px solid">
+        <img id="Logo" src="./universalMedia/LOGO.png" alt="Logo">
         <div id="login-container">
             <div id="loginForm">
-                <form action="" method="post">
+                <form action="./loginSuccess.html" method="get">
                     <h1>Login</h1>
                     <section id="usernameSection">
                         <img class="loginIcon" src="./universalMedia/usernameIcon.svg">
-                        <input type="text" name="username" placeholder="Username" required autocomplete="off">
+                        <input class="loginInfo" type="text" name="username" placeholder="Username" required autocomplete="off">
                         <br>
-                        <a href="./forgottenPages/forgotUsername.html">Forgot Username?</a>
+                        <a class="forgotButton" href="./forgottenPages/forgotUsername.html">Forgot Username?</a>
                     </section>
                     <section id="passwordSection">
                         <br>
                         <img class="loginIcon" src="./universalMedia/passwordIcon.svg">
-                        <input type="password" name="password" placeholder="Password" required autocomplete="off">
+                        <input class="loginInfo" type="password" name="password" placeholder="Password" required autocomplete="off">
                         <br>
-                        <a href="./forgottenPages/forgotPassword.html">Forgot Password?</a>
+                        <a class="forgotButton" href="./forgottenPages/forgotPassword.html">Forgot Password?</a>
                     </section>
-                    <input type="submit" value="Login" disabled>
+                    <input id="loginButton" type="submit" value="Login">
                     <section id="sso">
                         <button type="button"><a href="https://www.google.com" id="googleSSO" class="sso"><img src="./universalMedia/google.svg"></a></button>
                         <button type="button"><a href="https://www.github.com" id="githubSSO" class="sso"><img src="./universalMedia/github.svg"></a></button>
