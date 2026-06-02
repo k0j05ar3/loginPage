@@ -10,7 +10,7 @@ Users, or visitors, should be able to do the following:
 - Access the locked away page
 
 ## Access
-You can access the login page and try it out for yourself at the following link: [Demo Login Page](https://k0j05ar3.github.io/loginPage)
+Clone the repo and open it locally
 ![Desktop design of login page](Design/Desktop.png)
 
 ## Contributions
